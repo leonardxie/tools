@@ -14,17 +14,17 @@ app = FastAPI()
 
 @app.post("/dwonfile1")
 def sync_dwonfile():
-    return FileResponse(path='./data.bat',filename='data.bat',media_type="application/octet-stream")
+    return FileResponse(path='data.bat', filename='data.bat', media_type="application/octet-stream")
 
 
 
 @app.post("/dwonfile1")
 def sync_dwonfile():
-    return FileResponse(path='./data.bat',filename='data.bat',media_type="application/octet-stream")
+    return FileResponse(path='data.bat', filename='data.bat', media_type="application/octet-stream")
 
 @app.post("/dwonfile2")
 async def async_dwonfile():
-    return FileResponse(path='./data.bat',filename='data.bat',media_type="application/octet-stream")
+    return FileResponse(path='data.bat', filename='data.bat', media_type="application/octet-stream")
 
 if __name__ == "__main__":
     import uvicorn

@@ -11,7 +11,7 @@
 ### 🏠 [Homepage](https://github.com/fuergaosi233/gitbook2pdf)
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-[English](./README.md) [中文](./README_zh.md)
+[English](README.md) [中文](README_zh.md)
 
 ## 特性
 
@@ -20,13 +20,13 @@
   能在几秒内完成对整个站点地抓取
 
 - 生成的文本可以进行复制
-  ![](./screenshots/copy-feature.png)
+  ![](screenshots/copy-feature.png)
 - 保存原目录结构
-  ![](./screenshots/index.png)
+  ![](screenshots/index.png)
 
 - 保存原有的超链接
 
-![](./screenshots/link-feature.png)
+![](screenshots/link-feature.png)
 
 - 保存原有站点的格式（使用 js 渲染生成的无法抓取 🤷‍♂️
 - 极小的存储空间占用， 800 页的 pdf 文件只占用 4.6mb

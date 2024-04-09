@@ -26,7 +26,7 @@ services:
       timeout: 5s
       retries: 5
   fastapi_api_service:
-    build: .
+    build: ""
     # 指定使用网络
     networks:
       - zyx-txnet

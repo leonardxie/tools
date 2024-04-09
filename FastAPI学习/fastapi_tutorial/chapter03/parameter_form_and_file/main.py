@@ -27,7 +27,7 @@ def sync_file(file: bytes = File(...)):
     :param file:
     :return:
     '''
-    with open('./data.bat', 'wb') as f:
+    with open('data.bat', 'wb') as f:
         f.write(file)
     return {'file_size': len(file)}
 
@@ -39,7 +39,7 @@ async def async_file(file: bytes = File(...)):
     :return:
     '''
     # 异步方式执行with操作,修改为 async with
-    async with aiofiles.open("./data.bat", "wb") as fp:
+    async with aiofiles.open("data.bat", "wb") as fp:
         await fp.write(file)
     return {'file_size': len(file)}
 

@@ -11,7 +11,7 @@
 ### 🏠 [Homepage](https://github.com/fuergaosi233/gitbook2pdf)
 
 [![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
-[English](./README.md) [中文](./README_zh.md)
+[English](README.md) [中文](README_zh.md)
 
 ## Feature
 
@@ -20,13 +20,13 @@
   Can be in a few seconds the data capture.
 
 - Grab the text can be replicated
-  ![](./screenshots/copy-feature.png)
+  ![](screenshots/copy-feature.png)
 - Save the original directory structure
-  ![](./screenshots/index.png)
+  ![](screenshots/index.png)
 
 - Retain the original hyperlinks
 
-![](./screenshots/link-feature.png)
+![](screenshots/link-feature.png)
 
 - Completely retained the original format（Use js rendered unable to retain🤷‍♂️
 - Smaller storage space, 800 pages of PDF file is only 4.6 MB
