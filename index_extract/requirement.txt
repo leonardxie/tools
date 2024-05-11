@@ -1,0 +1,8 @@
+numpy
+python-crfsuite
+six
+sklearn-crfsuite
+tabulate
+torch
+tqdm
+openpyxl
