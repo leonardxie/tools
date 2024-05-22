@@ -62,7 +62,7 @@ def create_data_to_bmes(file_path, save_path):
 
 
 def main():
-    add_data_to_train_bmes(file_path="./corpus/train.txt", save_path="./corpus/train.char.bmes")
+    add_data_to_train_bmes(file_path="./corpus/train.txt", save_path="corpus/train.char.bmes")
     # create_data_to_bmes(file_path="./corpus/train.txt", save_path="./corpus/train.char.bmes")
 
 

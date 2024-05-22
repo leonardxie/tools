@@ -37,7 +37,7 @@ def main():
     # if isinstance(data, str):
     #     test_word_lists = load_list_data([data], make_vocab=False)
 
-    res = crf_evaluate(model_path="./ckpts/crf.joblib", test_word_lists=test_word_lists)
+    res = crf_evaluate(model_path="ckpts/crf.joblib", test_word_lists=test_word_lists)
     print(res)
 
 
