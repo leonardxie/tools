@@ -48,7 +48,7 @@ def download_huggingface_model(repo_id, save_dir=""):
             snapshot_folder = snapshot_download(
                 repo_id=repo_id,
                 cache_dir=cache_dir,
-                resume_download=True,
+                # resume_download=True,
             )
             print(f"Moving `{model_name}` cache file to `{save_dir}` ...")
             move_cache_file(snapshot_folder=snapshot_folder, save_rt_dir=save_dir)
@@ -66,8 +66,8 @@ def download_huggingface_model(repo_id, save_dir=""):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "--repo_id", type=str, default="baichuan-inc/Baichuan-13B-Chat",
-        help="model name like: `openlm-research/open_llama_13b`")
+        "--repo_id", type=str, default="Qwen/Qwen1.5-1.8B-Chat",
+        help="model name like: `Qwen/Qwen1.5-1.8B-Chat`")
     parser.add_argument("--save_dir", type=str, default='./', help="model save dir")
 
     args = parser.parse_args()

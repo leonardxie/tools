@@ -1,0 +1,1 @@
+本版本适应于vllm 0.4.2，修改部分为NGramWorker以及engine等文件
