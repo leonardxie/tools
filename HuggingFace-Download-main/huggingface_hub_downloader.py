@@ -7,6 +7,7 @@
 # -----------------------------
 
 import os
+os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"  # 设置为hf的国内镜像网站
 import argparse
 import time
 import shutil
@@ -64,6 +65,10 @@ def download_huggingface_model(repo_id, save_dir=""):
 
 
 def main():
+    # 或者命令行
+    # # 建议将上面这一行写入 ~/.bashrc。若没有写入，则每次下载时都需要先输入该命令
+    # export HF_ENDPOINT=https://hf-mirror.com
+    # proxychains4 huggingface-cli download --resume-download lamm-mit/x-lora --local-dir x-lora
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--repo_id", type=str, default="Qwen/Qwen1.5-1.8B-Chat",
@@ -77,5 +82,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
