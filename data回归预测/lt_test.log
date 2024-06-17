@@ -1,0 +1,822 @@
+/data01/rhino_xsg/software/anaconda3/envs/py310_tools/bin/python /data01/rhino_xsg/project/tools/data回归预测/train.py
+/data01/rhino_xsg/project/tools/data回归预测/train.py:14: DeprecationWarning:
+Pyarrow will become a required dependency of pandas in the next major release of pandas (pandas 3.0),
+(to allow more performant data types, such as the Arrow string type, and better interoperability with other libraries)
+but was not found to be installed on your system.
+If this would cause problems for you,
+please provide us feedback at https://github.com/pandas-dev/pandas/issues/54466
+
+  import pandas as pd
+(106279, 15)
+          temp1     temp2     temp3  ...      stab      rat1      effi
+0      0.461572  0.586228  0.432757  ... -0.142294  0.505036  0.301167
+1     -1.147716 -1.571250 -1.545577  ... -0.066910 -0.000038  0.079564
+2      0.998001  1.642016  1.628959  ... -0.425840  1.123434  0.525679
+3      0.078408  0.035383  0.018687  ... -0.191717  0.090285  0.114496
+4     -0.841185 -0.331848 -0.533406  ... -0.435237 -0.145630 -0.018045
+...         ...       ...       ...  ...       ...       ...       ...
+21251 -0.074858  1.596112  1.858998  ... -0.572042  1.232648  0.591188
+21252  0.423255  0.723940  0.938843  ... -0.449751 -0.531745 -0.226889
+21253  0.193357 -1.020405 -1.269530  ... -0.418659 -0.905181 -0.467617
+21254  0.883052  1.642016  1.766983  ... -0.482413  0.721762  0.413148
+21255 -0.036541 -0.148232 -0.303367  ...  0.040037 -0.658404 -0.289969
+
+[106279 rows x 15 columns]
+
+
+Train on different lr range from 0.01 to 0.0001 with stepping 0.0001:
+
+
+lr:0.00010
+train log rmse 0.358797
+Save model success!
+MAE: 16408.49
+MSE: 996313674.70
+RMSE: 31564.44
+test score:  -1647.9175031001755
+
+lr:0.00020
+train log rmse 0.014859
+Save model success!
+MAE: 1800.60
+MSE: 7845207.48
+RMSE: 2800.93
+test score:  -11.983963040569648
+
+lr:0.00030
+train log rmse 0.058860
+Save model success!
+MAE: 6909.93
+MSE: 113505792.43
+RMSE: 10653.91
+test score:  -186.85417944905214
+
+lr:0.00040
+train log rmse 0.124445
+Save model success!
+MAE: 15822.71
+MSE: 454913155.72
+RMSE: 21328.69
+test score:  -751.889661063985
+
+lr:0.00050
+train log rmse 0.008182
+Save model success!
+MAE: 896.74
+MSE: 2031686.39
+RMSE: 1425.37
+test score:  -2.3624784362250706
+
+lr:0.00060
+train log rmse 0.008138
+Save model success!
+MAE: 954.97
+MSE: 1946712.42
+RMSE: 1395.25
+test score:  -2.2218449467553154
+
+lr:0.00070
+train log rmse 0.064713
+Save model success!
+MAE: 6901.33
+MSE: 117575172.16
+RMSE: 10843.21
+test score:  -193.5890779515711
+
+lr:0.00080
+train log rmse 0.004479
+Save model success!
+MAE: 600.76
+MSE: 641775.21
+RMSE: 801.11
+test score:  -0.062149808413896945
+
+lr:0.00090
+train log rmse 0.004465
+Save model success!
+MAE: 593.48
+MSE: 625618.03
+RMSE: 790.96
+test score:  -0.035409374132951754
+
+lr:0.00100
+train log rmse 0.006366
+Save model success!
+MAE: 817.07
+MSE: 1378912.52
+RMSE: 1174.27
+test score:  -1.2821256396407414
+
+lr:0.00110
+train log rmse 0.024746
+Save model success!
+MAE: 3135.96
+MSE: 20002223.94
+RMSE: 4472.38
+test score:  -32.10404944501779
+
+lr:0.00120
+train log rmse 0.005189
+Save model success!
+MAE: 686.28
+MSE: 814027.31
+RMSE: 902.23
+test score:  -0.34723020214952593
+
+lr:0.00130
+train log rmse 0.004828
+Save model success!
+MAE: 648.99
+MSE: 693005.12
+RMSE: 832.47
+test score:  -0.14693625894527296
+
+lr:0.00140
+train log rmse 0.004177
+Save model success!
+MAE: 559.37
+MSE: 551732.28
+RMSE: 742.79
+test score:  0.08687290810869153
+
+lr:0.00150
+train log rmse 0.019529
+Save model success!
+MAE: 2364.80
+MSE: 11902739.79
+RMSE: 3450.03
+test score:  -18.69925382695635
+
+lr:0.00160
+train log rmse 0.007379
+Save model success!
+MAE: 967.40
+MSE: 1748890.40
+RMSE: 1322.46
+test score:  -1.8944458686289938
+
+lr:0.00170
+train log rmse 0.013021
+Save model success!
+MAE: 1422.08
+MSE: 5531236.01
+RMSE: 2351.86
+test score:  -8.154297597609037
+
+lr:0.00180
+train log rmse 0.005028
+Save model success!
+MAE: 675.36
+MSE: 859084.93
+RMSE: 926.87
+test score:  -0.4218014006401398
+
+lr:0.00190
+train log rmse 0.004417
+Save model success!
+MAE: 603.24
+MSE: 589012.62
+RMSE: 767.47
+test score:  0.02517324849273861
+
+lr:0.00200
+train log rmse 0.004545
+Save model success!
+MAE: 588.61
+MSE: 575875.61
+RMSE: 758.86
+test score:  0.04691524720752649
+
+lr:0.00210
+train log rmse 0.006053
+Save model success!
+MAE: 754.03
+MSE: 1205942.59
+RMSE: 1098.15
+test score:  -0.9958572303804321
+
+lr:0.00220
+train log rmse 0.042088
+Save model success!
+MAE: 918.93
+MSE: 1613377.64
+RMSE: 1270.19
+test score:  -1.6701697452919801
+
+lr:0.00230
+train log rmse 0.004380
+Save model success!
+MAE: 591.95
+MSE: 569836.62
+RMSE: 754.88
+test score:  0.05690989010079328
+
+lr:0.00240
+train log rmse 0.004712
+Save model success!
+MAE: 641.27
+MSE: 672401.18
+RMSE: 820.00
+test score:  -0.1128363495367175
+
+lr:0.00250
+train log rmse 0.005471
+Save model success!
+MAE: 725.12
+MSE: 955806.77
+RMSE: 977.65
+test score:  -0.5818778348755422
+
+lr:0.00260
+train log rmse 0.004107
+Save model success!
+MAE: 540.24
+MSE: 500461.94
+RMSE: 707.43
+test score:  0.17172626544830105
+
+lr:0.00270
+train log rmse 0.004179
+Save model success!
+MAE: 566.53
+MSE: 525829.40
+RMSE: 725.14
+test score:  0.1297426420189941
+
+lr:0.00280
+train log rmse 0.005748
+Save model success!
+MAE: 793.31
+MSE: 985629.37
+RMSE: 992.79
+test score:  -0.6312347870120001
+
+lr:0.00290
+train log rmse 0.004967
+Save model success!
+MAE: 661.46
+MSE: 730894.59
+RMSE: 854.92
+test score:  -0.20964402336491883
+
+lr:0.00300
+train log rmse 0.004303
+Save model success!
+MAE: 587.83
+MSE: 554024.19
+RMSE: 744.33
+test score:  0.08307975315852589
+
+lr:0.00310
+train log rmse 0.004589
+Save model success!
+MAE: 623.05
+MSE: 621399.40
+RMSE: 788.29
+test score:  -0.02842746137449792
+
+lr:0.00320
+train log rmse 0.005678
+Save model success!
+MAE: 723.09
+MSE: 1044858.71
+RMSE: 1022.18
+test score:  -0.7292604381574961
+
+lr:0.00330
+train log rmse 0.004417
+Save model success!
+MAE: 595.06
+MSE: 579341.72
+RMSE: 761.15
+test score:  0.04117877727151953
+
+lr:0.00340
+train log rmse 0.004901
+Save model success!
+MAE: 657.28
+MSE: 714161.98
+RMSE: 845.08
+test score:  -0.18195125141394763
+
+lr:0.00350
+train log rmse 0.004454
+Save model success!
+MAE: 597.41
+MSE: 580347.30
+RMSE: 761.81
+test score:  0.039514517605591326
+
+lr:0.00360
+train log rmse 0.006283
+Save model success!
+MAE: 858.06
+MSE: 1216607.08
+RMSE: 1103.00
+test score:  -1.0135071479887103
+
+lr:0.00370
+train log rmse 0.004758
+Save model success!
+MAE: 655.98
+MSE: 672623.58
+RMSE: 820.14
+test score:  -0.11320443049755213
+
+lr:0.00380
+train log rmse 0.005797
+Save model success!
+MAE: 814.09
+MSE: 1009027.73
+RMSE: 1004.50
+test score:  -0.6699594935090392
+
+lr:0.00390
+train log rmse 0.005637
+Save model success!
+MAE: 770.56
+MSE: 951511.12
+RMSE: 975.45
+test score:  -0.5747684468543777
+
+lr:0.00400
+train log rmse 0.004804
+Save model success!
+MAE: 650.53
+MSE: 689014.94
+RMSE: 830.07
+test score:  -0.14033243795929162
+
+lr:0.00410
+train log rmse 0.004290
+Save model success!
+MAE: 567.63
+MSE: 552235.66
+RMSE: 743.13
+test score:  0.08603980385273347
+
+lr:0.00420
+train log rmse 0.004340
+Save model success!
+MAE: 585.66
+MSE: 591331.77
+RMSE: 768.98
+test score:  0.021335013770072186
+
+lr:0.00430
+train log rmse 0.007773
+Save model success!
+MAE: 962.57
+MSE: 1906399.56
+RMSE: 1380.72
+test score:  -2.1551264318728336
+
+lr:0.00440
+train log rmse 0.004905
+Save model success!
+MAE: 672.41
+MSE: 717976.81
+RMSE: 847.34
+test score:  -0.18826485362090528
+
+lr:0.00450
+train log rmse 0.011531
+Save model success!
+MAE: 1386.03
+MSE: 4476697.39
+RMSE: 2115.82
+test score:  -6.40901673348235
+
+lr:0.00460
+train log rmse 0.004042
+Save model success!
+MAE: 542.25
+MSE: 490127.88
+RMSE: 700.09
+test score:  0.1888293265225931
+
+lr:0.00470
+train log rmse 0.005616
+Save model success!
+MAE: 747.81
+MSE: 1016699.82
+RMSE: 1008.32
+test score:  -0.682656957387413
+
+lr:0.00480
+train log rmse 0.004752
+Save model success!
+MAE: 610.65
+MSE: 688296.80
+RMSE: 829.64
+test score:  -0.1391439033101567
+
+lr:0.00490
+train log rmse 0.004643
+Save model success!
+MAE: 628.99
+MSE: 641405.43
+RMSE: 800.88
+test score:  -0.061537817649802484
+
+lr:0.00500
+train log rmse 0.005183
+Save model success!
+MAE: 674.39
+MSE: 797156.01
+RMSE: 892.84
+test score:  -0.3193078955576647
+
+lr:0.00510
+train log rmse 0.005393
+Save model success!
+MAE: 685.68
+MSE: 863874.46
+RMSE: 929.45
+test score:  -0.4297281660535883
+
+lr:0.00520
+train log rmse 0.004158
+Save model success!
+MAE: 555.41
+MSE: 518104.71
+RMSE: 719.79
+test score:  0.1425271544919804
+
+lr:0.00530
+train log rmse 0.004256
+Save model success!
+MAE: 577.17
+MSE: 539968.19
+RMSE: 734.83
+test score:  0.10634268547394643
+
+lr:0.00540
+train log rmse 0.006317
+Save model success!
+MAE: 803.31
+MSE: 1193620.22
+RMSE: 1092.53
+test score:  -0.97546346949216
+
+lr:0.00550
+train log rmse 0.005443
+Save model success!
+MAE: 769.91
+MSE: 908737.25
+RMSE: 953.28
+test score:  -0.5039769097133198
+
+lr:0.00560
+train log rmse 0.004516
+Save model success!
+MAE: 614.85
+MSE: 605550.22
+RMSE: 778.17
+test score:  -0.0021967730170613375
+
+lr:0.00570
+train log rmse 0.005854
+Save model success!
+MAE: 783.35
+MSE: 1041704.07
+RMSE: 1020.64
+test score:  -0.7240394436935802
+
+lr:0.00580
+train log rmse 0.024402
+Save model success!
+MAE: 2931.46
+MSE: 18536310.40
+RMSE: 4305.38
+test score:  -29.67793551815647
+
+lr:0.00590
+train log rmse 0.004519
+Save model success!
+MAE: 606.65
+MSE: 605222.95
+RMSE: 777.96
+test score:  -0.0016551379186684478
+
+lr:0.00600
+train log rmse 0.004414
+Save model success!
+MAE: 578.20
+MSE: 583129.61
+RMSE: 763.63
+test score:  0.03490974704112293
+
+lr:0.00610
+train log rmse 0.004947
+Save model success!
+MAE: 680.54
+MSE: 754926.87
+RMSE: 868.87
+test score:  -0.24941789620861643
+
+lr:0.00620
+train log rmse 0.006878
+Save model success!
+MAE: 955.19
+MSE: 1417166.97
+RMSE: 1190.45
+test score:  -1.3454374591785196
+
+lr:0.00630
+train log rmse 0.006151
+Save model success!
+MAE: 763.82
+MSE: 1196013.49
+RMSE: 1093.62
+test score:  -0.9794243865694525
+
+lr:0.00640
+train log rmse 0.006664
+Save model success!
+MAE: 954.50
+MSE: 1332998.73
+RMSE: 1154.56
+test score:  -1.2061374724955716
+
+lr:0.00650
+train log rmse 0.004667
+Save model success!
+MAE: 612.61
+MSE: 693548.68
+RMSE: 832.80
+test score:  -0.14783584810278305
+
+lr:0.00660
+train log rmse 0.005620
+Save model success!
+MAE: 776.81
+MSE: 956095.31
+RMSE: 977.80
+test score:  -0.582355360810394
+
+lr:0.00670
+train log rmse 0.004101
+Save model success!
+MAE: 548.41
+MSE: 510943.86
+RMSE: 714.80
+test score:  0.1543784933473561
+
+lr:0.00680
+train log rmse 0.005272
+Save model success!
+MAE: 679.95
+MSE: 808998.54
+RMSE: 899.44
+test score:  -0.3389074998455244
+
+lr:0.00690
+train log rmse 0.045605
+Save model success!
+MAE: 7265.58
+MSE: 68024050.89
+RMSE: 8247.67
+test score:  -111.58105854839795
+
+lr:0.00700
+train log rmse 0.004748
+Save model success!
+MAE: 644.91
+MSE: 689811.65
+RMSE: 830.55
+test score:  -0.1416510067312362
+
+lr:0.00710
+train log rmse 0.010635
+Save model success!
+MAE: 1441.42
+MSE: 2676191.32
+RMSE: 1635.91
+test score:  -3.429145979470146
+
+lr:0.00720
+train log rmse 0.004491
+Save model success!
+MAE: 606.26
+MSE: 599574.44
+RMSE: 774.32
+test score:  0.0076932446120038245
+
+lr:0.00730
+train log rmse 0.009301
+Save model success!
+MAE: 1347.46
+MSE: 2702671.67
+RMSE: 1643.98
+test score:  -3.4729714569151797
+
+lr:0.00740
+train log rmse 0.004685
+Save model success!
+MAE: 637.94
+MSE: 664687.82
+RMSE: 815.28
+test score:  -0.10007060226307196
+
+lr:0.00750
+train log rmse 0.004949
+Save model success!
+MAE: 667.53
+MSE: 727249.87
+RMSE: 852.79
+test score:  -0.20361194484829825
+
+lr:0.00760
+train log rmse 0.005419
+Save model success!
+MAE: 751.85
+MSE: 868656.92
+RMSE: 932.02
+test score:  -0.43764321858005384
+
+lr:0.00770
+train log rmse 0.006556
+Save model success!
+MAE: 870.76
+MSE: 1310522.97
+RMSE: 1144.78
+test score:  -1.1689396799708174
+
+lr:0.00780
+train log rmse 0.004867
+Save model success!
+MAE: 670.38
+MSE: 715689.35
+RMSE: 845.98
+test score:  -0.18447906725087093
+
+lr:0.00790
+train log rmse 0.005308
+Save model success!
+MAE: 718.09
+MSE: 831696.10
+RMSE: 911.97
+test score:  -0.37647238487763435
+
+lr:0.00800
+train log rmse 0.005539
+Save model success!
+MAE: 764.88
+MSE: 1006282.89
+RMSE: 1003.14
+test score:  -0.665416740620002
+
+lr:0.00810
+train log rmse 0.005643
+Save model success!
+MAE: 795.55
+MSE: 947790.55
+RMSE: 973.55
+test score:  -0.5686108449657601
+
+lr:0.00820
+train log rmse 0.005220
+Save model success!
+MAE: 727.87
+MSE: 805743.69
+RMSE: 897.63
+test score:  -0.333520668798883
+
+lr:0.00830
+train log rmse 0.005637
+Save model success!
+MAE: 716.80
+MSE: 948718.41
+RMSE: 974.02
+test score:  -0.5701464628639854
+
+lr:0.00840
+train log rmse 0.004459
+Save model success!
+MAE: 590.03
+MSE: 601274.56
+RMSE: 775.42
+test score:  0.004879521694589606
+
+lr:0.00850
+train log rmse 0.005822
+Save model success!
+MAE: 762.55
+MSE: 989915.45
+RMSE: 994.94
+test score:  -0.6383283311297978
+
+lr:0.00860
+train log rmse 0.010555
+Save model success!
+MAE: 755.47
+MSE: 905798.93
+RMSE: 951.73
+test score:  -0.49911393245925706
+
+lr:0.00870
+train log rmse 0.004702
+Save model success!
+MAE: 617.28
+MSE: 670042.03
+RMSE: 818.56
+test score:  -0.10893191774896249
+
+lr:0.00880
+train log rmse 0.005097
+Save model success!
+MAE: 690.32
+MSE: 782874.49
+RMSE: 884.80
+test score:  -0.29567171596537967
+
+lr:0.00890
+train log rmse 0.004933
+Save model success!
+MAE: 667.96
+MSE: 730612.86
+RMSE: 854.76
+test score:  -0.2091777588126309
+
+lr:0.00900
+train log rmse 0.007314
+Save model success!
+MAE: 1096.81
+MSE: 1630512.65
+RMSE: 1276.92
+test score:  -1.698528506863512
+
+lr:0.00910
+train log rmse 0.004836
+Save model success!
+MAE: 673.02
+MSE: 703606.52
+RMSE: 838.81
+test score:  -0.16448176484292998
+
+lr:0.00920
+train log rmse 0.005566
+Save model success!
+MAE: 758.63
+MSE: 933987.60
+RMSE: 966.43
+test score:  -0.5457667051031909
+
+lr:0.00930
+train log rmse 0.004777
+Save model success!
+MAE: 606.87
+MSE: 690523.10
+RMSE: 830.98
+test score:  -0.1428284706585139
+
+lr:0.00940
+train log rmse 0.005708
+Save model success!
+MAE: 742.45
+MSE: 985968.73
+RMSE: 992.96
+test score:  -0.6317964283927657
+
+lr:0.00950
+train log rmse 0.005340
+Save model success!
+MAE: 732.69
+MSE: 984864.36
+RMSE: 992.40
+test score:  -0.6299686726305331
+
+lr:0.00960
+train log rmse 0.010901
+Save model success!
+MAE: 1634.65
+MSE: 3717769.37
+RMSE: 1928.15
+test score:  -5.15297686889834
+
+lr:0.00970
+train log rmse 0.004846
+Save model success!
+MAE: 607.87
+MSE: 708456.28
+RMSE: 841.70
+test score:  -0.1725082025712259
+
+lr:0.00980
+train log rmse 0.004135
+Save model success!
+MAE: 551.53
+MSE: 507540.42
+RMSE: 712.42
+test score:  0.16001125325783971
+
+lr:0.00990
+train log rmse 0.004659
+Save model success!
+MAE: 622.95
+MSE: 644967.56
+RMSE: 803.10
+test score:  -0.06743320000149677
+
+进程已结束,退出代码0
